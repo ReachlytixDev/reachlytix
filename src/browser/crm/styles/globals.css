@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply crm-border-border;
+  }
+  body {
+    @apply crm-bg-background crm-text-foreground;
+  }
+}
+
+/* CRM specific styles */
+.crm-container {
+  @apply crm-w-full crm-h-full crm-flex crm-flex-col;
+}
+
+.crm-activity-bar {
+  @apply crm-w-12 crm-bg-secondary crm-border-r crm-border-border crm-flex crm-flex-col crm-items-center crm-py-2;
+}
+
+.crm-activity-item {
+  @apply crm-w-10 crm-h-10 crm-flex crm-items-center crm-justify-center crm-rounded-md crm-mb-2 crm-cursor-pointer crm-transition-colors;
+}
+
+.crm-activity-item:hover {
+  @apply crm-bg-accent crm-text-accent-foreground;
+}
+
+.crm-activity-item.active {
+  @apply crm-bg-primary crm-text-primary-foreground;
+}
+
+.crm-main-content {
+  @apply crm-flex-1 crm-flex crm-overflow-hidden;
+}
+
+.crm-sidebar {
+  @apply crm-w-64 crm-bg-card crm-border-r crm-border-border crm-flex crm-flex-col;
+}
+
+.crm-content-area {
+  @apply crm-flex-1 crm-flex crm-flex-col crm-overflow-hidden;
+}
+
+.crm-header {
+  @apply crm-h-12 crm-bg-card crm-border-b crm-border-border crm-flex crm-items-center crm-justify-between crm-px-4;
+}
+
+.crm-page-content {
+  @apply crm-flex-1 crm-overflow-auto crm-p-4;
+}

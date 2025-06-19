@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered CRM Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .demo-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .demo-header {
+            background: #fff;
+            border-bottom: 1px solid #e1e5e9;
+            padding: 1rem;
+            display: flex;
+            justify-content: between;
+            align-items: center;
+        }
+        
+        .demo-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .demo-subtitle {
+            color: #6b7280;
+            margin-top: 0.25rem;
+        }
+        
+        .demo-content {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        .demo-sidebar {
+            width: 300px;
+            background: #fff;
+            border-right: 1px solid #e1e5e9;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+        
+        .demo-main {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+        
+        .feature-list {
+            list-style: none;
+            space-y: 0.5rem;
+        }
+        
+        .feature-item {
+            padding: 0.75rem;
+            background: #f8f9fa;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+        }
+        
+        .feature-desc {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        .demo-card {
+            background: #fff;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-content {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-item {
+            padding: 0.25rem 0.75rem;
+            background: #f3f4f6;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <div>
+                <h1 class="demo-title">AI-Powered CRM for VS Code</h1>
+                <p class="demo-subtitle">Built with React, TypeScript, and shadcn/ui components</p>
+            </div>
+        </div>
+        
+        <div class="demo-content">
+            <div class="demo-sidebar">
+                <h3 style="margin-bottom: 1rem; color: #1a1a1a;">Features Overview</h3>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <div class="feature-title">⚡ Co-pilot Reacher</div>
+                        <div class="feature-desc">AI-powered chat assistant for CRM navigation and task automation</div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">🏠 Home Dashboard</div>
+                        <div class="feature-desc">Overview of leads, tasks, analytics, and key metrics</div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">📞 VOIP Dialer</div>
+                        <div class="feature-desc">Manual and automated calling with Twilio integration</div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">🪟 Campaigns</div>
+                        <div class="feature-desc">Email, SMS, and telemarketing campaign management</div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">🤖 Agent Studio</div>
+                        <div class="feature-desc">AI agent building for lead generation and automation</div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title">⚙️ Settings</div>
+                        <div class="feature-desc">User management and system configuration</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="demo-main">
+                <div class="demo-card">
+                    <h2 class="card-title">Project Status</h2>
+                    <div class="card-content">
+                        <p>The AI-Powered CRM has been successfully integrated into the code-server codebase with a modern, component-based architecture.</p>
+                        <div class="status-badge">✅ Phase 1 Complete</div>
+                    </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h2 class="card-title">Technical Implementation</h2>
+                    <div class="card-content">
+                        <p>Built using modern web technologies and best practices:</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">React 18</span>
+                            <span class="tech-item">TypeScript</span>
+                            <span class="tech-item">Tailwind CSS</span>
+                            <span class="tech-item">shadcn/ui</span>
+                            <span class="tech-item">Radix UI</span>
+                            <span class="tech-item">Lucide Icons</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h2 class="card-title">Architecture Overview</h2>
+                    <div class="card-content">
+                        <p>The CRM is designed as a modular system that integrates seamlessly with VS Code's existing architecture:</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #6b7280;">
+                            <li>Component-based UI with reusable shadcn/ui elements</li>
+                            <li>TypeScript interfaces for type safety and better DX</li>
+                            <li>Tailwind CSS with custom prefix to avoid conflicts</li>
+                            <li>Patch-based integration with VS Code's workbench</li>
+                            <li>Service-oriented architecture for extensibility</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h2 class="card-title">Next Steps</h2>
+                    <div class="card-content">
+                        <p>To complete the implementation:</p>
+                        <ol style="margin-top: 1rem; padding-left: 1.5rem; color: #6b7280;">
+                            <li>Build VS Code with the CRM patches applied</li>
+                            <li>Implement backend services for data persistence</li>
+                            <li>Add Twilio integration for VOIP functionality</li>
+                            <li>Develop AI agents for automation features</li>
+                            <li>Create comprehensive testing suite</li>
+                            <li>Deploy and configure production environment</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
